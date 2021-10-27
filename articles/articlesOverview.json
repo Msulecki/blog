@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "react-patterns-compound-components",
+    "date": "2021-10-16",
+    "title": "React patterns - Compound Components",
+    "caption": "Advanced custom components are often supplied with many props and some other inner components. With Compound Components approach, it'll be easy to work with them in development and as a user. I used one in <code class='keyword'>&lt;Post/&gt;</code> component of this blog and I'll show you why."
+  },
+  {
+    "slug": "mobile-tables-with-css-grid",
+    "date": "2021-10-22",
+    "title": "Tables vs mobile devices? CSS Grid to the rescue!",
+    "caption": "Creating good tables isn't trivial task. It can appear easy at first, but when it comes to creating both semantic and good looking responsive table, there will be some standards (and compromises) to follow. In this post, I want to show my approach to creating RWD friendly tables with mobile first approach and with use of CSS Grid features."
+  }
+]

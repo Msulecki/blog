@@ -12,7 +12,16 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@articles/*": ["articles/*"],
+      "@components/*": ["components/*"],
+      "@config/*": ["config/*"],
+      "@pages/*": ["pages/*"],
+      "@public/*": ["public/*"],
+      "@styles/*": ["styles/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

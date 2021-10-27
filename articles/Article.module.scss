@@ -1,0 +1,52 @@
+code.keyword {
+  font-size: 1rem;
+  padding: 0.2rem;
+  border: 1px solid hsl(320, 80%, 70%);
+  border-radius: 0.2rem;
+  background-color: hsl(320, 50%, 90%);
+  color: hsl(320, 100%, 20%);
+}
+
+.highlight {
+  background: linear-gradient(
+    0deg,
+    hsl(40, 90%, 80%) 0%,
+    hsl(40, 90%, 80%) 40%,
+    hsla(40, 90%, 80%, 0) 40%
+  );
+  padding: 0.2rem;
+}
+
+.list {
+  margin-left: 1rem;
+  list-style-type: none;
+  font-weight: 300;
+
+  li {
+    padding-left: 0.5rem;
+  }
+
+  li.pros + li:not(.pros),
+  li.cons + li:not(.cons),
+  li:not(.pros):not(.cons) + li:not(li:not(.pros):not(.cons)) {
+    margin-top: 1rem;
+  }
+
+  li::marker {
+    content: '•';
+    color: hsl(200, 80%, 60%);
+    font-size: 1rem;
+    font-weight: 900;
+    padding-right: 1rem;
+  }
+
+  li.pros::marker {
+    content: '✓';
+    color: hsl(100, 80%, 40%);
+  }
+
+  li.cons::marker {
+    content: '×';
+    color: hsl(0, 80%, 70%);
+  }
+}

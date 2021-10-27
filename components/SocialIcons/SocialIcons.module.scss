@@ -1,0 +1,20 @@
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+  width: 4rem;
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    height: 1.6rem;
+    width: 1.6rem;
+
+    border-radius: 0.25rem;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 96%);
+    font-weight: 900;
+    font-size: 0.8rem;
+    user-select: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,22 @@
+.introduction {
+  &__caption {
+    color: hsl(0, 0%, 30%);
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 0.5rem;
+    size: 1.2rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 20%);
+
+    a {
+      padding: 0 0.25rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

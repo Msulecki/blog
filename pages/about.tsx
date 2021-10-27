@@ -3,23 +3,22 @@ import Head from 'next/head';
 import TopSection from '@components/TopSection';
 import Footer from '@components/Footer';
 import styles from './index.module.scss';
-import Introduction from '@components/Introduction';
 
-const Overview: NextPage = () => {
+const About: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Matt Sulecki - blog</title>
+        <title>Matt Sulecki - blog | About</title>
         <meta name='description' content='Matt Sulecki - personal blog' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles['app']}>
         <TopSection />
-        <Introduction />
+        <h4>THIS IS ABOUT PAGE</h4>
         <Footer />
       </main>
     </>
   );
 };
 
-export default Overview;
+export default About;

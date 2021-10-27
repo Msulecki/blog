@@ -1,25 +1,25 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import TopSection from '@components/TopSection';
+import Articles from '@components/Articles';
 import Footer from '@components/Footer';
 import styles from './index.module.scss';
-import Introduction from '@components/Introduction';
 
-const Overview: NextPage = () => {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Matt Sulecki - blog</title>
+        <title>Matt Sulecki - blog | All posts</title>
         <meta name='description' content='Matt Sulecki - personal blog' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles['app']}>
         <TopSection />
-        <Introduction />
+        <Articles />
         <Footer />
       </main>
     </>
   );
 };
 
-export default Overview;
+export default Home;

@@ -1,0 +1,26 @@
+.post-code {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    width: clamp(600px, 50vw, 90vw);
+  }
+
+  pre {
+    margin: 0;
+    padding: 1rem 1rem 1rem 3rem;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    box-shadow: 0 0 1rem hsl(0, 0%, 70%);
+  }
+
+  &__title {
+    width: 100%;
+    margin-top: 0.2rem;
+    text-align: center;
+
+    font-weight: 300;
+    color: hsl(0, 0%, 40%);
+  }
+}

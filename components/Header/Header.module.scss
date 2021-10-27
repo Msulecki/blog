@@ -1,0 +1,30 @@
+.header {
+  font-family: 'Lato', sans-serif;
+  flex-grow: 1;
+
+  hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+
+  h1,
+  h2 {
+    user-select: none;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-weight: 900;
+    color: hsl(0, 0%, 20%);
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-weight: 100;
+    white-space: nowrap;
+    margin-left: 4rem;
+    margin-top: -0.75rem;
+  }
+}

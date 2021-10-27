@@ -1,0 +1,52 @@
+.nav {
+  flex-grow: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+    li {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:not(:last-of-type) {
+        border-right: 1px solid hsl(0, 0%, 20%);
+      }
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+
+      a {
+        padding: 0 1rem;
+        width: 100%;
+      }
+
+      &.overview > a {
+        color: hsl(100, 100%, 20%);
+      }
+      &.all > a {
+        color: hsl(200, 100%, 20%);
+      }
+      &.about > a {
+        color: hsl(300, 100%, 20%);
+      }
+
+      &.active > a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

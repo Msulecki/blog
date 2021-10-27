@@ -1,0 +1,9 @@
+.app {
+  min-height: 100vh;
+  width: clamp(600px, 80vw, 900px);
+  padding: 0 0.5rem 1rem 0.5rem;
+  margin: 0 auto;
+  font-family: 'Lato';
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,29 @@
+.not-found {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  &__header {
+    position: relative;
+    display: grid;
+    place-items: center;
+    line-height: 1;
+    font-size: 50vmin;
+    font-weight: 900;
+  }
+
+  &__ascii {
+    position: absolute;
+    font-size: 5vmin;
+    font-weight: 300;
+  }
+
+  &__sorry {
+    place-self: bottom end;
+    bottom: 0.5vmin;
+    right: 5vmin;
+    font-size: 2vmin;
+    font-weight: 300;
+  }
+}

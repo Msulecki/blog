@@ -1,0 +1,28 @@
+.post-image {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+
+  figure {
+    width: clamp(600px, 50vw, 90vw);
+
+    & > div {
+      overflow: visible !important;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.4rem;
+      box-shadow: 0 0 1rem hsl(0, 0%, 70%);
+    }
+
+    figcaption {
+      margin-top: 0.2rem;
+      text-align: center;
+      font-weight: 300;
+      color: hsl(0, 0%, 40%);
+    }
+  }
+}
