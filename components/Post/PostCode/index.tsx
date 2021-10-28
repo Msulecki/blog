@@ -23,8 +23,12 @@ function PostCode({ children, title, lang = 'tsx' }: IPostCode) {
   return (
     <div className={styles['post-code']}>
       <div className={styles['post-code__wrapper']}>
-        <pre>
-          <code className={`language-${lang}`} ref={codeBlockRef}>
+        <pre suppressHydrationWarning={true}>
+          <code
+            suppressHydrationWarning={true}
+            className={`language-${lang}`}
+            ref={codeBlockRef}
+          >
             {children}
           </code>
         </pre>
