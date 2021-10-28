@@ -22,7 +22,7 @@
       }
 
       &:not(:last-of-type) {
-        border-right: 1px solid hsl(0, 0%, 20%);
+        border-right: 1px solid var(--content);
       }
 
       &:last-of-type {
@@ -35,13 +35,13 @@
       }
 
       &.overview > a {
-        color: hsl(100, 100%, 20%);
+        color: var(--menu-green);
       }
       &.all > a {
-        color: hsl(200, 100%, 20%);
+        color: var(--menu-blue);
       }
       &.about > a {
-        color: hsl(300, 100%, 20%);
+        color: var(--menu-red);
       }
 
       &.active > a {

@@ -10,11 +10,15 @@
     width: 1.6rem;
 
     border-radius: 0.25rem;
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 96%);
+    background-color: var(--content);
+    color: var(--background);
     font-weight: 900;
     font-size: 0.8rem;
     user-select: none;
     cursor: pointer;
+
+    &:hover {
+      background-color: --hover-2;
+    }
   }
 }

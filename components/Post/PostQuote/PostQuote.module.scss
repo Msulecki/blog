@@ -1,9 +1,9 @@
 .post-quote {
-  background-color: hsl(0, 0%, 90%);
+  background-color: var(--background-2);
   padding: 0 3rem 1rem 3rem;
   margin: 1rem 0;
-  color: hsl(0, 0%, 40%);
-  border: 1px solid hsl(0, 0%, 60%);
+  color: --hover;
+  border: 1px solid --hover-2;
   border-radius: 1rem;
   text-align: justify;
   display: flex;
@@ -12,5 +12,11 @@
 
   cite {
     text-decoration: underline;
+
+    a {
+      &:hover {
+        color: --hover-2;
+      }
+    }
   }
 }

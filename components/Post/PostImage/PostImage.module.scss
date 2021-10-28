@@ -15,14 +15,14 @@
       width: 100%;
       height: auto;
       border-radius: 0.4rem;
-      box-shadow: 0 0 1rem hsl(0, 0%, 70%);
+      box-shadow: 0 0 1rem var(--box-shadow);
     }
 
     figcaption {
       margin-top: 0.2rem;
       text-align: center;
       font-weight: 300;
-      color: hsl(0, 0%, 40%);
+      color: --hover;
     }
   }
 }

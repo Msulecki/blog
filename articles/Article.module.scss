@@ -3,18 +3,18 @@ code.keyword {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   padding: 0.2rem;
-  border: 1px solid hsl(320, 80%, 70%);
+  border: 1px solid var(--pink);
   border-radius: 0.2rem;
-  background-color: hsl(320, 50%, 90%);
-  color: hsl(320, 100%, 20%);
+  background-color: var(--light-pink);
+  color: var(--content-pink);
 }
 
 .highlight {
   background: linear-gradient(
     0deg,
-    hsl(40, 90%, 80%) 0%,
-    hsl(40, 90%, 80%) 40%,
-    hsla(40, 90%, 80%, 0) 40%
+    var(--highlight-yellow) 0%,
+    var(--highlight-yellow) 40%,
+    var(--highlight-yellow-opacity) 40%
   );
   padding: 0.2rem;
 }

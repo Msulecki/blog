@@ -1,6 +1,6 @@
 .post-header {
   padding: 0.5rem 1rem;
-  color: hsl(0, 0%, 20%);
+  color: var(--content);
   display: flex;
   border-radius: 0.4rem;
   margin-bottom: 2rem;
@@ -18,7 +18,7 @@
     align-items: flex-start;
     white-space: nowrap;
     min-width: 5rem;
-    color: hsl(0, 0%, 40%);
+    color: --hover;
     font-size: 0.75rem;
   }
 }

@@ -1,7 +1,7 @@
 .footer {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  color: hsl(0, 0%, 40%);
+  color: --hover;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -12,5 +12,6 @@
     flex: 1;
     text-align: center;
     margin-left: 4rem;
+    user-select: none;
   }
 }
