@@ -3,6 +3,9 @@ import PostContent from './PostContent';
 import PostImage from './PostImage';
 import PostCode from './PostCode';
 import PostIntroduction from './PostIntroduction';
+import PostQuote from './PostQuote';
+import PostSources from './PostSources';
+import PostList from './PostList';
 import { createContext } from 'react';
 import { IPostHeaderDate } from './PostHeader';
 import styles from './Post.module.scss';
@@ -26,5 +29,8 @@ Post.Content = PostContent;
 Post.Image = PostImage;
 Post.Code = PostCode;
 Post.Introduction = PostIntroduction;
+Post.Quote = PostQuote;
+Post.Sources = PostSources;
+Post.List = PostList;
 
 export default Post;
