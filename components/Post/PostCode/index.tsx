@@ -4,6 +4,7 @@ import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-jsx';
 import 'prismjs/components/prism-tsx';
 import 'prismjs/components/prism-scss';
+import 'prismjs/themes/prism-tomorrow.css';
 import styles from './PostCode.module.scss';
 
 interface IPostCode {

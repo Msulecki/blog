@@ -2,8 +2,8 @@
   background-color: var(--background-2);
   padding: 0 3rem 1rem 3rem;
   margin: 1rem 0;
-  color: --hover;
-  border: 1px solid --hover-2;
+  color: var(--hover);
+  border: 1px solid var(--hover-2);
   border-radius: 1rem;
   text-align: justify;
   display: flex;
@@ -15,7 +15,7 @@
 
     a {
       &:hover {
-        color: --hover-2;
+        color: var(--hover-2);
       }
     }
   }

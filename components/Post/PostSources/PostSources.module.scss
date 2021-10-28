@@ -3,7 +3,7 @@
 
   &__separator {
     height: 1px;
-    background-color: --hover;
+    background-color: var(--hover);
     width: clamp(150px, 20vmin, 300px);
     margin: 1rem 0 0.25rem 0;
   }
