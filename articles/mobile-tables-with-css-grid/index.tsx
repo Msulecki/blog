@@ -1,4 +1,5 @@
 import Post from '@components/Post';
+import PostList from '@components/Post/PostList';
 import image_sample from '@public/img/20211022/image_sample.png';
 import { IArticle } from '../types';
 
@@ -24,20 +25,20 @@ function Article({ date, title }: IArticle) {
           qui.
         </p>
 
-        <strong>Pros and cons of lists:</strong>
-        <ul className='list'>
-          <li className='pros'>Can be ordered or unordered</li>
-          <li className='pros'>Emojis as bullets!</li>
-          <li className='pros'>Free to use</li>
-          <li className='pros'>Easy to modify</li>
-          <li className='pros'>Blessed by Jesus himself</li>
-          <li className='cons'>You must watch out for semantics</li>
-          <li className='cons'>They don&apos;t speak to you</li>
-          <li className='cons'>Requires style resetting</li>
-          <li className='cons'>There are 3 tags to remember</li>
-          <li className='cons'>No one uses &lt;ol&gt; anymore</li>
-          <li className='cons'>Blessed by Jesus himself</li>
-        </ul>
+        <PostList title='Pros and cons of lists:'>
+          <PostList.Item pros>Can be ordered or unordered</PostList.Item>
+          <PostList.Item pros>Emojis as bullets!</PostList.Item>
+          <PostList.Item pros>Free to use</PostList.Item>
+          <PostList.Item pros>Easy to modify</PostList.Item>
+          <PostList.Item pros>Blessed by Jesus himself</PostList.Item>
+          <PostList.Item cons>You must watch out for semantics</PostList.Item>
+          <PostList.Item cons>They don&apos;t speak to you</PostList.Item>
+          <PostList.Item cons>Requires style resetting</PostList.Item>
+          <PostList.Item cons>There are 3 tags to remember</PostList.Item>
+          <PostList.Item cons>No one uses &lt;ol&gt; anymore</PostList.Item>
+          <PostList.Item>Just some lonely neutral item</PostList.Item>
+        </PostList>
+
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
           necessitatibus numquam repudiandae voluptates. Minus tempora facere
@@ -100,11 +101,11 @@ export default Post;`}
           officiis labore nulla dignissimos! Nisi, natus quo debitis beatae amet
           facere reprehenderit quae ipsum sunt neque.
         </p>
-        <ul className={'list'}>
-          <li>This is deault styled list</li>
-          <li>Bullets are standard but blue</li>
-          <li>Last item with default style</li>
-        </ul>
+        <Post.List>
+          <Post.List.Item>This is deault styled list</Post.List.Item>
+          <Post.List.Item>Bullets are standard but blue</Post.List.Item>
+          <Post.List.Item>Last item with default style</Post.List.Item>
+        </Post.List>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
           tempora possimus veniam ut ad est hic aspernatur molestiae quis
