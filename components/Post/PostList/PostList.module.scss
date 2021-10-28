@@ -1,0 +1,29 @@
+.post-list {
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  font-weight: 300;
+
+  li.pros + li:not(.pros),
+  li.cons + li:not(.cons),
+  li:not(.pros):not(.cons) + li:not(li:not(.pros):not(.cons)) {
+    margin-top: 1rem;
+  }
+
+  li::marker {
+    content: '•   ';
+    color: hsl(200, 80%, 60%);
+    font-size: 1rem;
+    font-weight: 900;
+    padding-right: 1rem;
+  }
+
+  li.pros::marker {
+    content: '✓   ';
+    color: hsl(100, 80%, 40%);
+  }
+
+  li.cons::marker {
+    content: '×   ';
+    color: hsl(0, 80%, 70%);
+  }
+}

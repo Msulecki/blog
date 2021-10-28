@@ -1,0 +1,23 @@
+.post-sources {
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 20%);
+
+  &__separator {
+    height: 1px;
+    background-color: hsl(0, 0%, 40%);
+    width: clamp(150px, 20vmin, 300px);
+    margin: 1rem 0 0.25rem 0;
+  }
+
+  ol.list {
+    list-style-type: none;
+
+    li {
+      counter-increment: ordered-list;
+    }
+
+    li:before {
+      content: '[' counter(ordered-list, decimal) ']   ';
+    }
+  }
+}

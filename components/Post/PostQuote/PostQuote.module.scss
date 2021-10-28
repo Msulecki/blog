@@ -1,0 +1,16 @@
+.post-quote {
+  background-color: hsl(0, 0%, 90%);
+  padding: 0 3rem 1rem 3rem;
+  margin: 1rem 0;
+  color: hsl(0, 0%, 40%);
+  border: 1px solid hsl(0, 0%, 60%);
+  border-radius: 1rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  cite {
+    text-decoration: underline;
+  }
+}
