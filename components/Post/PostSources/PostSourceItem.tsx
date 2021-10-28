@@ -7,7 +7,7 @@ interface IPostSourceItem {
 
 function PostSourceItem({ children, link }: IPostSourceItem) {
   return (
-    <li>
+    <li className={styles['list__item']}>
       {link ? (
         <a href={link} target='_blank' rel='noopener noreferrer'>
           {children}

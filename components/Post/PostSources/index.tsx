@@ -10,7 +10,7 @@ function PostSources({ children }: IPostSources) {
   return (
     <div className={styles['post-sources']}>
       <div className={styles['post-sources__separator']}></div>
-      <ol className='list'>{children}</ol>
+      <ol className={styles['list']}>{children}</ol>
     </div>
   );
 }
