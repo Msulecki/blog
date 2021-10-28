@@ -10,5 +10,11 @@
     "date": "2021-10-22",
     "title": "Tables vs mobile devices? CSS Grid to the rescue!",
     "caption": "Creating good tables isn't trivial task. It can appear easy at first, but when it comes to creating both semantic and good looking responsive table, there will be some standards (and compromises) to follow. In this post, I want to show my approach to creating RWD friendly tables with mobile first approach and with use of CSS Grid features."
+  },
+  {
+    "slug": "blog-showcase",
+    "date": "2021-10-27",
+    "title": "Hi. Meet my blog.",
+    "caption": "Hello World! Creating posts on given topic is my way of discovering new things in web technologies. So I made this blog in Next.js (which is also new to me) and I'll try to challenge myself with expanding my comprehension on subject. This entry is overview of blog features i thought will come in handy"
   }
 ]

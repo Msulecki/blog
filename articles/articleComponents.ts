@@ -10,6 +10,7 @@ const components: IComponents = {
   'react-patterns-compound-components': dynamic(
     () => import('@articles/compound-components')
   ),
+  'blog-showcase': dynamic(() => import('@articles/blog-showcase')),
 };
 
 export default components;
