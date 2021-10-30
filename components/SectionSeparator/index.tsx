@@ -1,7 +1,7 @@
 import styles from './SectionSeparator.module.scss';
 
 function SectionSeparator() {
-  return <div className={styles['section-separator']}></div>;
+  return <hr className={styles['section-separator']}></hr>;
 }
 
 export default SectionSeparator;
