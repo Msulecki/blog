@@ -1,12 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import { IPostIntroduction } from '../Post.types';
 import styles from './PostIntroduction.module.scss';
-
-interface IPostIntroduction {
-  children: React.ReactNode;
-  caption: string;
-  slug: string;
-}
 
 function Introduction({ children, caption, slug }: IPostIntroduction) {
   return (

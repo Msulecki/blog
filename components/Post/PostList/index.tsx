@@ -1,15 +1,11 @@
 import PostListItem from './PostListItem';
+import { IPostList } from '../Post.types';
 import styles from './PostList.module.scss';
-
-interface IPostList {
-  children: React.ReactNode;
-  title?: string;
-}
 
 function PostList({ children, title }: IPostList) {
   return (
     <>
-      <strong>{title}</strong>
+      {title && <strong>{title}</strong>}
       <ul className={styles['post-list']}>{children}</ul>
     </>
   );

@@ -1,10 +1,6 @@
 import Image from 'next/image';
+import { IPostImage } from '../Post.types';
 import styles from './PostImage.module.scss';
-
-interface IPostImage {
-  src: StaticImageData;
-  children: string;
-}
 
 function PostImage({ src, children }: IPostImage) {
   return (

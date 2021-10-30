@@ -1,15 +1,12 @@
 import React from 'react';
 import PostSourceItem from './PostSourceItem';
+import { IChildrenFromProps } from '@globalTypes/index';
 import styles from './PostSources.module.scss';
 
-interface IPostSources {
-  children?: React.ReactNode;
-}
-
-function PostSources({ children }: IPostSources) {
+function PostSources({ children }: IChildrenFromProps) {
   return (
     <div className={styles['post-sources']}>
-      <div className={styles['post-sources__separator']}></div>
+      <hr className={styles['post-sources__separator']}></hr>
       <ol className={styles['list']}>{children}</ol>
     </div>
   );

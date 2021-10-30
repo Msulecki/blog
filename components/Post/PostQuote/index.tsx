@@ -1,18 +1,5 @@
+import type { TPostQuote } from '../Post.types';
 import styles from './PostQuote.module.scss';
-
-interface IPostQuoteWithCite {
-  children: string;
-  source: string;
-  href: string;
-}
-
-interface IPostQuoteWithoutCite {
-  children: string;
-  source?: never;
-  href?: never;
-}
-
-type TPostQuote = IPostQuoteWithCite | IPostQuoteWithoutCite;
 
 function PostQuote({ children, source, href }: TPostQuote) {
   return (

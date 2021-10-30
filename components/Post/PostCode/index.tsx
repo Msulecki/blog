@@ -5,13 +5,8 @@ import 'prismjs/components/prism-jsx';
 import 'prismjs/components/prism-tsx';
 import 'prismjs/components/prism-scss';
 import 'prismjs/themes/prism-tomorrow.css';
+import { IPostCode } from '../Post.types';
 import styles from './PostCode.module.scss';
-
-interface IPostCode {
-  children: string;
-  lang?: 'tsx' | 'scss';
-  title?: string;
-}
 
 function PostCode({ children, title, lang = 'tsx' }: IPostCode) {
   const codeBlockRef = useRef<HTMLElement>(null);

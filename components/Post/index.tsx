@@ -1,3 +1,4 @@
+import { createContext } from 'react';
 import PostHeader from './PostHeader';
 import PostContent from './PostContent';
 import PostImage from './PostImage';
@@ -6,13 +7,8 @@ import PostIntroduction from './PostIntroduction';
 import PostQuote from './PostQuote';
 import PostSources from './PostSources';
 import PostList from './PostList';
-import { createContext } from 'react';
-import { IPostHeaderDate } from './PostHeader';
 import styles from './Post.module.scss';
-
-interface IPost extends IPostHeaderDate {
-  children: React.ReactNode;
-}
+import { IPost } from './Post.types';
 
 export const PostContext = createContext<any>({});
 

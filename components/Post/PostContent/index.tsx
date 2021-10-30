@@ -1,10 +1,6 @@
-import React from 'react';
+import { IChildrenFromProps } from '@globalTypes/index';
 
-interface IPostContent {
-  children: React.ReactNode;
-}
-
-function PostContent({ children }: IPostContent) {
+function PostContent({ children }: IChildrenFromProps) {
   return <>{children}</>;
 }
 
