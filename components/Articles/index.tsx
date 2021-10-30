@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import components from '@articles/articleComponents';
 import articlesOverview from '@articles/articlesOverview.json';
 import NotFound from '@components/NotFound';
@@ -20,7 +21,16 @@ function Articles({ slug }: IArticles) {
       return <Component date={date} title={title} />;
     }
 
-    return <NotFound />;
+    return (
+      <>
+        <Head>
+          <title>Post not found</title>
+          <meta name='description' content='Matt Sulecki - personal blog' />
+          <link rel='icon' href='/favicon.ico' />
+        </Head>
+        <NotFound code={404} title="this post doesn't exist" />
+      </>
+    );
   }
 
   const reorderedPosts = articlesOverview.sort((a, b) =>

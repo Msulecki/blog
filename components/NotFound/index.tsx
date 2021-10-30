@@ -1,12 +1,17 @@
 import styles from './NotFound.module.scss';
 
-function NotFound() {
+interface INotFound {
+  code: number;
+  title?: string;
+}
+
+function NotFound({ code, title = 'sorry...' }: INotFound) {
   return (
     <article className={styles['not-found']}>
       <span className={styles['not-found__header']}>
-        404
+        {code}
         <span className={styles['not-found__ascii']}>ಠ_ಠ</span>
-        <span className={styles['not-found__sorry']}>sorry...</span>
+        <span className={styles['not-found__sorry']}>{title}</span>
       </span>
     </article>
   );

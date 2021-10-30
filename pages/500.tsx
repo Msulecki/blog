@@ -6,11 +6,11 @@ const ErrorPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Page not found</title>
+        <title>Server Error</title>
         <meta name='description' content='Matt Sulecki - personal blog' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <NotFound code={404} />
+      <NotFound code={500} />
     </>
   );
 };
