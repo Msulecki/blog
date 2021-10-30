@@ -1,16 +1,14 @@
-import dynamic from 'next/dynamic';
+import MobileTablesWithCssGrid from '@articles/mobile-tables-with-css-grid';
+import ReactPatternsCompoundComponents from '@articles/compound-components';
+import BlogShowcase from '@articles/blog-showcase';
 
 interface IComponents {
   [key: string]: Function;
 }
 const components: IComponents = {
-  'mobile-tables-with-css-grid': dynamic(
-    () => import('@articles/mobile-tables-with-css-grid')
-  ),
-  'react-patterns-compound-components': dynamic(
-    () => import('@articles/compound-components')
-  ),
-  'blog-showcase': dynamic(() => import('@articles/blog-showcase')),
+  'mobile-tables-with-css-grid': MobileTablesWithCssGrid,
+  'react-patterns-compound-components': ReactPatternsCompoundComponents,
+  'blog-showcase': BlogShowcase,
 };
 
 export default components;
