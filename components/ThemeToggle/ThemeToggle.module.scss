@@ -1,0 +1,12 @@
+.theme-toggle {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: var(--hover);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
