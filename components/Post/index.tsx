@@ -7,8 +7,12 @@ import PostIntroduction from './PostIntroduction';
 import PostQuote from './PostQuote';
 import PostSources from './PostSources';
 import PostList from './PostList';
-import styles from './Post.module.scss';
+import PostLink from './PostLink';
+import PostHighlight from './PostHighlight';
+import PostKeyword from './PostKeyword';
+import PostTags from './PostTags';
 import { IPost } from './Post.types';
+import styles from './Post.module.scss';
 
 export const PostContext = createContext<any>({});
 
@@ -28,5 +32,9 @@ Post.Introduction = PostIntroduction;
 Post.Quote = PostQuote;
 Post.Sources = PostSources;
 Post.List = PostList;
+Post.Link = PostLink;
+Post.Highlight = PostHighlight;
+Post.Keyword = PostKeyword;
+Post.Tags = PostTags;
 
 export default Post;

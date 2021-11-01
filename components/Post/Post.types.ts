@@ -28,16 +28,22 @@ export interface IPostList extends IChildrenFromProps {
   title?: string;
 }
 
-interface IPostQuoteWithCite {
-  children: IStringChildrenFromProps;
+interface IPostQuoteWithCite extends IStringChildrenFromProps {
   source: string;
   href: string;
 }
 
-interface IPostQuoteWithoutCite {
-  children: IStringChildrenFromProps;
+interface IPostQuoteWithoutCite extends IStringChildrenFromProps {
   source?: never;
   href?: never;
 }
 
 export type TPostQuote = IPostQuoteWithCite | IPostQuoteWithoutCite;
+
+export interface IPostLink extends IStringChildrenFromProps {
+  href: string;
+}
+
+export interface IPostTags {
+  tags: string[];
+}
