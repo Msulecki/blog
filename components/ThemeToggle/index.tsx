@@ -23,8 +23,13 @@ function ThemeToggle() {
   }
 
   return (
-    <button className={styles['theme-toggle']} onClick={onThemeChange}>
-      {'Go ' + getNextTheme(localTheme)}
+    <button
+      className={`${styles['theme-toggle']} ${
+        styles[`theme-toggle--${localTheme}`]
+      }`}
+      onClick={onThemeChange}
+    >
+      <div className={styles['theme-toggle__indicator']}></div>
     </button>
   );
 }
