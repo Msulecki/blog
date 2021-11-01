@@ -1,0 +1,11 @@
+.highlight {
+  background: linear-gradient(
+    0deg,
+    var(--highlight-yellow) 0%,
+    var(--highlight-yellow) 40%,
+    var(--highlight-yellow-opacity) 40%
+  );
+
+  padding: 0.2rem;
+  color: var(--content);
+}

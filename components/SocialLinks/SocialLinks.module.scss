@@ -1,0 +1,12 @@
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+
+  &__link {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
