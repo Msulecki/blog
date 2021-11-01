@@ -1,15 +1,15 @@
-import SocialIcons from '@components/SocialIcons';
-import ThemeToggle from '@components/ThemeToggle';
+import SocialLinks from '@components/SocialLinks';
 import styles from './Footer.module.scss';
 
 function Footer() {
   return (
     <footer className={styles['footer']}>
       <small>
-        &copy;{` ${new Date().getFullYear()} Mateusz Sułecki | `}
-        <ThemeToggle />
+        <span className={styles['footer__copyrights']}>
+          &copy;{` ${new Date().getFullYear()} Mateusz Sułecki`}
+        </span>
+        <SocialLinks />
       </small>
-      <SocialIcons />
     </footer>
   );
 }
