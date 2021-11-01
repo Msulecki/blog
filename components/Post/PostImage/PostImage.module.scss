@@ -6,8 +6,9 @@
   figure {
     width: clamp(600px, 50vw, 90vw);
 
-    & > div {
+    & > span {
       overflow: visible !important;
+      display: block !important;
     }
 
     img {
@@ -18,6 +19,7 @@
     }
 
     figcaption {
+      margin-top: 0.2rem;
       text-align: center;
       font-weight: 300;
       color: var(--hover);
