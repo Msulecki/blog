@@ -16,6 +16,7 @@ function Introduction() {
             caption={introduction.caption}
           >
             <Post.Header>{introduction.title}</Post.Header>
+            <Post.Tags tags={introduction.tags || []} />
           </Post.Introduction>
         </Post>
       ))}
