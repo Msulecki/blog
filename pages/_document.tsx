@@ -15,10 +15,14 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang='en'>
         <Head />
         <body className='light'>
-          <script dangerouslySetInnerHTML={{ __html: themeLoader }} />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: themeLoader,
+            }}
+          />
           <Main />
           <NextScript />
         </body>
