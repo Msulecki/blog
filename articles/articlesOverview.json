@@ -3,7 +3,7 @@
     "slug": "react-patterns-compound-components",
     "date": "2021-10-16",
     "title": "React patterns - Compound Components",
-    "caption": "Advanced custom components are often supplied with many props and some other inner components. With Compound Components approach, it'll be easy to work with them in development and as a user. I used one in <code class='keyword'>&lt;Post/&gt;</code> component of this blog and I'll show you why."
+    "caption": "Advanced custom components are often supplied with many props and some other inner components. With Compound Components approach, it'll be easy to work with them in development and as a user. I used one in &lt;Post/&gt; component of this blog and I'll show you why."
   },
   {
     "slug": "mobile-tables-with-css-grid",
@@ -15,6 +15,7 @@
     "slug": "blog-showcase",
     "date": "2021-10-27",
     "title": "Hi. Meet my blog.",
+    "tags": ["React", "Next.js", "JS", "TS", "Patterns"],
     "caption": "Hello World! Creating posts on given topic is my way of discovering new things in web technologies. So I made this blog in Next.js (which is also new to me) and I'll try to challenge myself with expanding my comprehension on subject. This entry is overview of blog features i thought will come in handy"
   }
 ]
