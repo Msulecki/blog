@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "PORT=3033 next dev",
     "build": "jest && next build",
+    "build:notest": "next build",
     "start": "PORT=3034 next start",
     "lint": "next lint",
     "test": "jest --watch"
