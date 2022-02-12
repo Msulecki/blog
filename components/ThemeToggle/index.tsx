@@ -24,6 +24,7 @@ function ThemeToggle() {
 
   return (
     <button
+      aria-label='dark theme toggle'
       className={`${styles['theme-toggle']} ${
         styles[`theme-toggle--${localTheme}`]
       }`}
