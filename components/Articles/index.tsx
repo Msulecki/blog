@@ -1,9 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-import components from '@articles/articleComponents';
 import articlesOverview from '@articles/articlesOverview.json';
 import NotFound from '@components/NotFound';
 import { sortKey } from '@config/articlesConfig';
+import * as allArticles from '@articles/index';
+import convertPathToModuleName from '@articles/convertPathToModuleName';
 
 interface IArticles {
   slug?: string;
@@ -11,9 +12,9 @@ interface IArticles {
 
 function Articles({ slug }: IArticles) {
   if (slug) {
-    if (components[slug]) {
-      const Component = components[slug];
+    const Component = (allArticles as any)[convertPathToModuleName(slug)];
 
+    if (Component) {
       const { date, title } = articlesOverview.filter(
         (article) => article.slug === slug
       )[0];
@@ -40,7 +41,9 @@ function Articles({ slug }: IArticles) {
   return (
     <>
       {reorderedPosts.map((article) => {
-        const Component = components[article.slug];
+        const Component = (allArticles as any)[
+          convertPathToModuleName(article.slug)
+        ];
 
         return (
           <Component
